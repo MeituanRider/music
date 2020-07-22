@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aftvc.top.dao.CollectMapper">
+
+    <select id="existSongId" resultType="Integer">
+ select count(*) from collect where user_id = #{userId} and song_id = #{songId}
+   </select>
+
+    <delete id="deleteCollect" parameterType="Integer" >
+        delete from collect
+        where user_id = #{userId}
+        and song_id = #{songId}
+    </delete>
+</mapper>
