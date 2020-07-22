@@ -91,4 +91,4 @@ npm run dev // 启动后台管理项目
 # 项目阿里云服务器上线
 服务器端安装docker pull自己需要的东西ngnix，mysql等，具体步骤可以参考how2j的docker教程简单易上手
 
-欢迎各位的fork与star
+欢迎各位的fork与star.
