@@ -1,0 +1,3 @@
+12:48:51.988 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/user", parameters={}
+12:48:51.995 [http-nio-8888-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.aftvc.top.controller.ConsumerController#allUser()
+12:48:52.005 [http-nio-8888-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession

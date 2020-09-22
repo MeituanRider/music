@@ -1,0 +1,16 @@
+12:41:42.905 [http-nio-8888-exec-7] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+12:41:42.902 [http-nio-8888-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
+12:41:42.925 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+12:41:42.925 [http-nio-8888-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................."com.mysql.jdbc.Driver"
+12:41:42.925 [http-nio-8888-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName......none
+12:41:42.925 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+12:41:42.926 [http-nio-8888-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+12:41:42.927 [http-nio-8888-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+12:41:42.927 [http-nio-8888-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+12:41:42.927 [http-nio-8888-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
+12:41:42.927 [http-nio-8888-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+12:41:42.927 [http-nio-8888-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+12:41:42.927 [http-nio-8888-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:mysql://localhost:3306/tp_music?useAffectedRows=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=Asia/Shanghai
+12:41:42.927 [http-nio-8888-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+12:41:42.928 [http-nio-8888-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+12:41:42.928 [http-nio-8888-exec-2] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10

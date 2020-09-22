@@ -1,0 +1,16 @@
+12:48:57.424 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/user", parameters={}
+12:48:57.429 [http-nio-8888-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.aftvc.top.controller.ConsumerController#allUser()
+12:48:57.430 [http-nio-8888-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+12:48:57.430 [http-nio-8888-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@106aad9a] was not registered for synchronization because synchronization is not active
+12:48:57.430 [http-nio-8888-exec-1] DEBUG o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+12:48:57.430 [http-nio-8888-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
+12:48:57.431 [http-nio-8888-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+12:48:57.431 [http-nio-8888-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................true
+12:48:57.431 [http-nio-8888-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................none
+12:48:57.431 [http-nio-8888-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+12:48:57.431 [http-nio-8888-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none
+12:48:57.431 [http-nio-8888-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+12:48:57.431 [http-nio-8888-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................none
+12:48:57.431 [http-nio-8888-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+12:48:57.431 [http-nio-8888-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+12:48:57.431 [http-nio-8888-exec-1] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}

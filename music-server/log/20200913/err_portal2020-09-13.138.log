@@ -1,0 +1,8 @@
+12:49:11.517 [http-nio-8888-exec-3] DEBUG com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
+12:49:11.520 [http-nio-8888-exec-3] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+12:49:11.520 [http-nio-8888-exec-3] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................true
+12:49:11.520 [http-nio-8888-exec-3] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................none
+12:49:11.520 [http-nio-8888-exec-3] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+12:49:11.520 [http-nio-8888-exec-3] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none
+12:49:11.520 [http-nio-8888-exec-3] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+12:49:11.521 [http-nio-8888-exec-3] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................none

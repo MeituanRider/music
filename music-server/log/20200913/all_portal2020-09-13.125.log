@@ -1,0 +1,4 @@
+12:48:07.774 [http-nio-8888-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.aftvc.top.controller.ConsumerController#userOfId(String)
+12:48:07.784 [http-nio-8888-exec-9] DEBUG o.s.w.s.m.m.a.ServletInvocableHandlerMethod - Could not resolve parameter [0] in public java.util.List<com.aftvc.top.domain.Consumer> com.aftvc.top.controller.ConsumerController.userOfId(java.lang.String): Required String parameter 'id' is not present
+12:48:07.785 [http-nio-8888-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'id' is not present]
+12:48:07.785 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST

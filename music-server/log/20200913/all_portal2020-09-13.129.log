@@ -1,0 +1,8 @@
+12:48:52.008 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+12:48:52.010 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................none
+12:48:52.010 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+12:48:52.010 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+12:48:52.010 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
+12:48:52.010 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................."com.mysql.jdbc.Driver"
+12:48:52.010 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName......none
+12:48:52.010 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}

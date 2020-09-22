@@ -1,0 +1,16 @@
+12:49:11.521 [http-nio-8888-exec-3] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+12:49:11.524 [http-nio-8888-exec-3] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+12:49:11.525 [http-nio-8888-exec-3] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
+12:49:11.525 [http-nio-8888-exec-3] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................."com.mysql.jdbc.Driver"
+12:49:11.525 [http-nio-8888-exec-3] DEBUG com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName......none
+12:49:11.525 [http-nio-8888-exec-3] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+12:49:11.525 [http-nio-8888-exec-3] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+12:49:11.526 [http-nio-8888-exec-3] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
+12:49:11.526 [http-nio-8888-exec-3] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+12:49:11.526 [http-nio-8888-exec-3] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+12:49:11.526 [http-nio-8888-exec-3] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:mysql://localhost:3306/tp_music?useAffectedRows=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=Asia/Shanghai
+12:49:11.527 [http-nio-8888-exec-3] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+12:49:11.527 [http-nio-8888-exec-3] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+12:49:11.527 [http-nio-8888-exec-3] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
+12:49:11.527 [http-nio-8888-exec-3] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+12:49:11.527 [http-nio-8888-exec-3] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none

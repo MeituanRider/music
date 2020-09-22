@@ -1,0 +1,16 @@
+12:48:52.010 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+12:48:52.013 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
+12:48:52.014 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+12:48:52.014 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+12:48:52.014 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:mysql://localhost:3306/tp_music?useAffectedRows=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=Asia/Shanghai
+12:48:52.014 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+12:48:52.015 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+12:48:52.015 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
+12:48:52.015 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+12:48:52.015 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+12:48:52.015 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle.....................10
+12:48:52.015 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - password........................<masked>
+12:48:52.015 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - poolName........................"HikariPool-1"
+12:48:52.015 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - readOnly........................false
+12:48:52.015 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+12:48:52.015 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none

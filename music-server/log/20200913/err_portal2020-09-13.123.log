@@ -1,0 +1,1 @@
+12:48:07.769 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/user/detail", parameters={}

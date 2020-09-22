@@ -1,0 +1,8 @@
+12:48:52.005 [http-nio-8888-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5784d63a] was not registered for synchronization because synchronization is not active
+12:48:52.007 [http-nio-8888-exec-5] DEBUG o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+12:48:52.007 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
+12:48:52.007 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+12:48:52.007 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................true
+12:48:52.007 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................none
+12:48:52.008 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+12:48:52.008 [http-nio-8888-exec-5] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none

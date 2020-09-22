@@ -1,0 +1,4 @@
+12:41:42.873 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/singer", parameters={}
+12:41:42.888 [http-nio-8888-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.aftvc.top.controller.SingerController#allSinger()
+12:41:42.888 [http-nio-8888-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.aftvc.top.controller.SongListController#allSongList()
+12:41:42.889 [http-nio-8888-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
