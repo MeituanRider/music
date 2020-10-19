@@ -26,6 +26,7 @@ import java.util.Date;
  * @ Modified By：
  * @Version: $
  */
+@SuppressWarnings("ALL")
 @Aspect
 @Component
 public class LogAspect {
