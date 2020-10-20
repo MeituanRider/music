@@ -1,6 +1,6 @@
 package com.aftvc.top.service.impl;
 
-import com.aftvc.top.domain.Admin;
+import com.aftvc.top.domain.Admins;
 import com.aftvc.top.dao.AdminMapper;
 import com.aftvc.top.service.AdminService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -18,7 +18,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Service
 @Transactional
-public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements AdminService {
+public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admins> implements AdminService {
     @Autowired
     private AdminMapper adminMapper;
     @Override

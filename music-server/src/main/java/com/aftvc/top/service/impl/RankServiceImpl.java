@@ -1,6 +1,6 @@
 package com.aftvc.top.service.impl;
 
-import com.aftvc.top.domain.Rank;
+import com.aftvc.top.domain.Ranks;
 import com.aftvc.top.dao.RankMapper;
 import com.aftvc.top.service.RankService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -16,16 +16,19 @@ import org.springframework.stereotype.Service;
  * @since 2020-07-09
  */
 @Service
-public class RankServiceImpl extends ServiceImpl<RankMapper, Rank> implements RankService {
+public class RankServiceImpl extends ServiceImpl<RankMapper, Ranks> implements RankService {
     @Autowired
     private RankMapper rankMapper;
     @Override
     public int rankOfSongListId(Long songListId) {
+        if(rankMapper.ScoreCount(songListId)==0){
+            return rankMapper.ScoreSum(songListId);
+        }
         return rankMapper.ScoreSum(songListId)/rankMapper.ScoreCount(songListId);
     }
 
     @Override
-    public int addRank(Rank rank) {
-        return rankMapper.insert(rank);
+    public int addRank(Ranks ranks) {
+        return rankMapper.insert(ranks);
     }
 }

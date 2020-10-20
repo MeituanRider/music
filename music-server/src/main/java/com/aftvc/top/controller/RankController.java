@@ -1,7 +1,7 @@
 package com.aftvc.top.controller;
 
 
-import com.aftvc.top.domain.Rank;
+import com.aftvc.top.domain.Ranks;
 import com.aftvc.top.domain.ResponseBean;
 import com.aftvc.top.service.impl.RankServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,11 +40,11 @@ public class RankController {
     @PostMapping("/rank/add")
     public ResponseBean addRank(@RequestParam("songListId") String songListId,@RequestParam("consumerId")String consumerId,@RequestParam("score")String score){
         ResponseBean responseBean = new ResponseBean();
-        Rank rank=new Rank();
-        rank.setSongListId(Long.parseLong(songListId));
-        rank.setConsumerId(Long.parseLong(consumerId));
-        rank.setScore(Integer.parseInt(score));
-        int i = rankService.addRank(rank);
+        Ranks ranks =new Ranks();
+        ranks.setSongListId(Long.parseLong(songListId));
+        ranks.setConsumerId(Long.parseLong(consumerId));
+        ranks.setScore(Integer.parseInt(score));
+        int i = rankService.addRank(ranks);
         if(i>0){
             responseBean.setCode(1);
             responseBean.setMsg("评价成功");

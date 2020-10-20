@@ -2,9 +2,9 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.aftvc.top.dao.RankMapper">
     <select id="ScoreSum" resultType="Integer">
-        SELECT SUM(score) as score FROM rank WHERE songListId=#{songListId}
+        SELECT SUM(score) as score FROM ranks WHERE songListId=#{songListId}
     </select>
     <select id="ScoreCount" resultType="Integer">
-        SELECT COUNT(*) AS COUNT FROM rank WHERE songListId=#{songListId}
+        SELECT COUNT(*) AS counts FROM ranks WHERE songListId=#{songListId}
     </select>
 </mapper>

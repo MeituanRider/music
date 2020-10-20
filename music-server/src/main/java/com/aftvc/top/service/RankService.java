@@ -1,6 +1,6 @@
 package com.aftvc.top.service;
 
-import com.aftvc.top.domain.Rank;
+import com.aftvc.top.domain.Ranks;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -11,8 +11,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author Yan
  * @since 2020-07-09
  */
-public interface RankService extends IService<Rank> {
+public interface RankService extends IService<Ranks> {
     int rankOfSongListId(Long songListId);
 
-    int addRank(Rank rank);
+    int addRank(Ranks ranks);
 }

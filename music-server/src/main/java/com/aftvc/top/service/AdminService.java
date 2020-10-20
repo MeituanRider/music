@@ -1,8 +1,7 @@
 package com.aftvc.top.service;
 
-import com.aftvc.top.domain.Admin;
+import com.aftvc.top.domain.Admins;
 import com.baomidou.mybatisplus.extension.service.IService;
-import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * <p>
@@ -12,6 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @author Yan
  * @since 2020-07-09
  */
-public interface AdminService extends IService<Admin> {
+public interface AdminService extends IService<Admins> {
     boolean veritypasswd(String name,String password);
 }

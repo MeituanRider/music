@@ -1,21 +1,16 @@
 package com.aftvc.top;
 
-import com.aftvc.top.dao.AdminMapper;
 import com.aftvc.top.dao.ConsumerMapper;
-import com.aftvc.top.dao.RankMapper;
 import com.aftvc.top.dao.SystemLogMapper;
-import com.aftvc.top.domain.Admin;
+import com.aftvc.top.domain.Admins;
 import com.aftvc.top.domain.Consumer;
-import com.aftvc.top.domain.Rank;
 import com.aftvc.top.domain.SystemLog;
 import com.aftvc.top.utils.RedisUtil;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.Date;
 import java.util.List;
-import java.util.Map;
 
 @SpringBootTest
 class DemoApplicationTests {
@@ -63,10 +58,10 @@ class DemoApplicationTests {
     private RedisUtil redisUtil;
     @Test
     void test(){
-        Admin admin = new Admin();
-        admin.setName("admin");
-        admin.setPassword("123124124");
-        System.out.println(redisUtil.set("name", admin));
+        Admins admins = new Admins();
+        admins.setName("admin");
+        admins.setPassword("123124124");
+        System.out.println(redisUtil.set("name", admins));
     }
 
 

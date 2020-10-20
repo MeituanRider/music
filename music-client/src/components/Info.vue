@@ -5,10 +5,10 @@
     <div class="personal">
       <el-form :model="registerForm" class="demo-ruleForm" label-width="80px">
         <el-form-item prop="username" label="用户名">
-          <el-input v-model="registerForm.username" placeholder="用户名"></el-input>
+          <el-input v-model="registerForm.username" placeholder="用户名" :disabled="true"></el-input>
         </el-form-item>
         <el-form-item prop="password" label="密码">
-          <el-input type="password" placeholder="密码" v-model="registerForm.password"></el-input>
+          <el-input type="password" placeholder="密码" v-model="registerForm.password" :disabled="true"></el-input>
         </el-form-item>
         <el-form-item label="性别">
           <el-radio-group v-model="registerForm.sex">

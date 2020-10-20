@@ -78,9 +78,7 @@ public class CollectController {
         }
 
         collect.setCreateTime(new Date());
-        System.out.println("end");
         boolean res = collectService.addCollection(collect);
-        System.out.println("test");
         if(res){
             responseBean.setCode(1);
             responseBean.setMsg("收藏成功");
