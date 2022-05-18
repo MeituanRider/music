@@ -7,4 +7,8 @@
     <select id="ScoreCount" resultType="Integer">
         SELECT COUNT(*) AS counts FROM ranks WHERE songListId=#{songListId}
     </select>
+
+    <select id="selectRankByIds" resultType="Ranks">
+        select * from ranks where songListId=#{songListId} and consumerId=#{consumerId}
+    </select>
 </mapper>

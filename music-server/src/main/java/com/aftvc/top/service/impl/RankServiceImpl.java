@@ -31,4 +31,10 @@ public class RankServiceImpl extends ServiceImpl<RankMapper, Ranks> implements R
     public int addRank(Ranks ranks) {
         return rankMapper.insert(ranks);
     }
+
+    @Override
+    public Ranks selectRankByIds(String songListId, String consumerId) {
+        return rankMapper.selectRankByIds(songListId, consumerId);
+    }
+
 }

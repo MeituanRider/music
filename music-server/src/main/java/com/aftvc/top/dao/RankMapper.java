@@ -16,4 +16,6 @@ import org.springframework.stereotype.Repository;
 public interface RankMapper extends BaseMapper<Ranks> {
     int ScoreSum(Long songListId);
     int ScoreCount(Long songListId);
+
+    Ranks selectRankByIds(String songListId, String consumerId);
 }

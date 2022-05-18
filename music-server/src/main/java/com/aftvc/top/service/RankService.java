@@ -15,4 +15,6 @@ public interface RankService extends IService<Ranks> {
     int rankOfSongListId(Long songListId);
 
     int addRank(Ranks ranks);
+
+    Ranks selectRankByIds(String songListId, String consumerId);
 }

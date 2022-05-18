@@ -128,6 +128,9 @@ export default {
             if (res.code === 1) {
               this.getRank(this.songListId)
               this.notify('评分成功', 'success')
+            } else if (res.code === 2) {
+              this.getRank(this.songListId)
+              this.notify('更新成功', 'success')
             } else {
               this.notify('评分失败', 'error')
             }

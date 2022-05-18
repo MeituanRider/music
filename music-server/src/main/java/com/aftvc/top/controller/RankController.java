@@ -4,6 +4,8 @@ package com.aftvc.top.controller;
 import com.aftvc.top.domain.Ranks;
 import com.aftvc.top.domain.ResponseBean;
 import com.aftvc.top.service.impl.RankServiceImpl;
+import com.baomidou.mybatisplus.core.conditions.Wrapper;
+import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -44,13 +46,18 @@ public class RankController {
         ranks.setSongListId(Long.parseLong(songListId));
         ranks.setConsumerId(Long.parseLong(consumerId));
         ranks.setScore(Integer.parseInt(score));
-        int i = rankService.addRank(ranks);
-        if(i>0){
+        Ranks currentRant=rankService.selectRankByIds(songListId,consumerId);
+        if(currentRant!=null){
+            UpdateWrapper<Ranks> wrapper = new UpdateWrapper<>();
+            wrapper.eq("songListId",songListId);
+            wrapper.eq("consumerId",consumerId);
+            rankService.update(ranks,wrapper);
+            responseBean.setCode(2);
+            responseBean.setMsg("更新成功");
+        }else{
+            rankService.addRank(ranks);
             responseBean.setCode(1);
             responseBean.setMsg("评价成功");
-        }else{
-            responseBean.setCode(0);
-            responseBean.setMsg("评价失败");
         }
         return responseBean;
     }
