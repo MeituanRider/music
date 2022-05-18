@@ -53,4 +53,10 @@ public class CollectServiceImpl extends ServiceImpl<CollectMapper, Collect> impl
     public boolean deleteCollect(int userId, int songId) {
         return collectMapper.deleteCollect(userId,songId)>0?true:false;
     }
+
+    @Override
+    public Collect selectCollection(String userId, String songId) {
+        Collect collect=collectMapper.selectCollection(userId,songId);
+        return collect;
+    }
 }

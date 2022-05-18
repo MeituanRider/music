@@ -333,7 +333,7 @@ export default {
               this.$store.commit('setIsActive', true)
               this.notify('收藏成功', 'success')
             } else if (res.code === 2) {
-              this.notify('已收藏', 'warning')
+              this.notify('取消收藏', 'success')
             } else {
               this.$notify.error({
                 title: '收藏失败',

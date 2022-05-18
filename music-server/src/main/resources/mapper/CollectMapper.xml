@@ -3,7 +3,7 @@
 <mapper namespace="com.aftvc.top.dao.CollectMapper">
 
     <select id="existSongId" resultType="Integer">
- select count(*) from collect where user_id = #{userId} and song_id = #{songId}
+      select count(*) from collect where user_id = #{userId} and song_id = #{songId}
    </select>
 
     <delete id="deleteCollect" parameterType="Integer" >
@@ -11,4 +11,8 @@
         where user_id = #{userId}
         and song_id = #{songId}
     </delete>
+
+    <select id="selectCollection" resultType="Collect">
+        select * from collect where user_id = #{userId} and song_id = #{songId}
+    </select>
 </mapper>

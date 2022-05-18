@@ -21,4 +21,5 @@ public interface CollectMapper extends BaseMapper<Collect> {
 
     int deleteCollect(@Param("userId") Integer userId, @Param("songId") Integer songId);
 
+    Collect selectCollection(String userId,String songId);
 }

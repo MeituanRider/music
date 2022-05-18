@@ -27,4 +27,5 @@ public interface CollectService extends IService<Collect> {
 
     boolean deleteCollect(int userId, int songId);
 
+    Collect selectCollection(String userId, String songId);
 }
