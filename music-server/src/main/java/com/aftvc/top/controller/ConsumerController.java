@@ -11,6 +11,8 @@ import com.alibaba.fastjson.JSONObject;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.util.ClassUtils;
+import org.springframework.util.ResourceUtils;
 import org.springframework.web.bind.annotation.*;
 
 import org.springframework.web.multipart.MultipartFile;
@@ -21,6 +23,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import javax.xml.ws.Response;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -50,6 +53,7 @@ public class ConsumerController {
         @Override
         public void addResourceHandlers(ResourceHandlerRegistry registry) {
             registry.addResourceHandler("/avatorImages/**").addResourceLocations("file:D:\\Javastudy\\music-server\\avatorImages\\");
+           // registry.addResourceHandler("/avatorImages/**").addResourceLocations("file:/Auserabled/java/avatorImages");
         }
     }
 
@@ -134,6 +138,7 @@ public class ConsumerController {
             responseBean.setMsg("注册成功");
         }else{
             responseBean.setCode(0);
+            responseBean.setMsg("注册失败");
             responseBean.setMsg("注册失败");
         }
         return responseBean;
@@ -262,14 +267,14 @@ public class ConsumerController {
             jsonObject.put("msg", "文件上传失败！");
         }
         String fileName = System.currentTimeMillis()+avatorFile.getOriginalFilename();
-        String filePath = System.getProperty("user.dir") + System.getProperty("file.separator") + "avatorImages" ;
+        String filePath = System.getProperty("user.dir") + System.getProperty("file.separator") + "src/main/resources/static/avatorImages" ;
         File file1 = new File(filePath);
         if (!file1.exists()){
             file1.mkdir();
         }
 
         File dest = new File(filePath + System.getProperty("file.separator") + fileName);
-        String storeAvatorPath = "/avatorImages/"+fileName;
+        String storeAvatorPath = "/static/avatorImages/"+fileName;
         try {
             avatorFile.transferTo(dest);
             Consumer consumer = new Consumer();

@@ -172,14 +172,14 @@ public class SongListController {
             return jsonObject;
         }
         String fileName = System.currentTimeMillis()+avatorFile.getOriginalFilename();
-        String filePath = System.getProperty("user.dir") + System.getProperty("file.separator") + "img" + System.getProperty("file.separator") + "songListPic" ;
+        String filePath = System.getProperty("user.dir") + System.getProperty("file.separator") + "src/main/resources/static/img/songListPic" ;
         File file1 = new File(filePath);
         if (!file1.exists()){
             file1.mkdir();
         }
 
         File dest = new File(filePath + System.getProperty("file.separator") + fileName);
-        String storeAvatorPath = "/img/songListPic/"+fileName;
+        String storeAvatorPath = "/static/img/songListPic/"+fileName;
         try {
             avatorFile.transferTo(dest);
             SongList songList = new SongList();
